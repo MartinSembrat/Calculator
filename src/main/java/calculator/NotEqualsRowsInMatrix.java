@@ -1,4 +1,7 @@
 package calculator;
 
-public class NotEqualsRowsInMatrix {
+public class NotEqualsRowsInMatrix extends Exception {
+    public NotEqualsRowsInMatrix(String errorMessage){
+        super (errorMessage);
+    }
 }

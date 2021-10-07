@@ -1,30 +1,42 @@
 package calculator;
 
+import calculator.enums.EMathOperationsConstans;
+
 import static java.lang.StrictMath.pow;
 import static java.lang.StrictMath.sqrt;
 
 public class RealNumbersOperations {
 
-    public static void RealNumbersOp(float firstElement, float secondElement, String z) {
-        switch (z) {
-            case MathOperationsConstans.SUM:
-                System.out.println("Suma " + (firstElement + secondElement));
+    public static float RealNumbersOperation(float firstElement, float secondElement, EMathOperationsConstans mathOperation) {
+        float result;
+        switch (mathOperation) {
+            case SUM:
+                result =firstElement + secondElement;
+                System.out.println("Suma " + result);
                 break;
-            case MathOperationsConstans.SUBTRACTION:
-                System.out.println("Różnica " + (firstElement - secondElement));
+            case SUBTRACTION:
+                result=firstElement - secondElement;
+                System.out.println("Różnica " + result);
                 break;
-            case MathOperationsConstans.MULTIPLICATION:
-                System.out.println("Iloczyn " + firstElement * secondElement);
+            case MULTIPLICATION:
+                result = firstElement * secondElement;
+                System.out.println("Iloczyn " + result);
                 break;
-            case MathOperationsConstans.DIVISION:
-                System.out.println("Iloraz " + firstElement / secondElement);
+            case DIVISION:
+                result = firstElement / secondElement;
+                System.out.println("Iloraz " + result);
                 break;
-            case MathOperationsConstans.POW:
-                System.out.println("Potęga " + pow(firstElement, secondElement));
+            case POW:
+                result = (float) pow(firstElement, secondElement);
+                System.out.println("Potęga " + result);
                 break;
-            case MathOperationsConstans.SQR:
-                System.out.println("Pierwiastek kwadratowy " + sqrt(firstElement));
+            case SQR:
+                result= (float) sqrt(firstElement);
+                System.out.println("Pierwiastek kwadratowy " +result );
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + mathOperation);
         }
+        return result;
     }
 }
