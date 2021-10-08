@@ -1,4 +1,4 @@
-package calculator;
+package calculator.controler;
 
 import static calculator.controler.DataReader.readDataFromConsole;
 

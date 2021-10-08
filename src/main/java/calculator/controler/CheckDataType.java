@@ -1,6 +1,6 @@
 package calculator.controler;
 
-import calculator.NotEqualsRowsInMatrix;
+import calculator.exceptions.NotEqualsRowsInMatrix;
 import calculator.mathObjectsClass.Matrix;
 import calculator.mathObjectsClass.RealNumber;
 import calculator.mathObjectsClass.VectorAsTable;

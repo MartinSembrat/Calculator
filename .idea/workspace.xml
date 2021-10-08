@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081db20b-560f-4aa7-b1eb-59cc5d70f32e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/CalculatorTeminate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/CheckDataType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/CheckMathObjectPossibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/DataReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/enums/EMathObjectType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/enums/EMathOperationsConstans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/mathObjectsClass/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/mathObjectsClass/RealNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/mathObjectsClass/VectorAsTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/model/CurrentOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/InterfaceMathOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/MathOperationExecute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/mathObjectsClass/MathObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CheckDataType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/MathOperationsConstans.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Matrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CalculatorTeminate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/CalculatorTeminate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/MatrixOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/MatrixOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/NotEqualsRowsInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/NotEqualsRowsInMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/RealNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/NotEqualsRowsInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/exceptions/NotEqualsRowsInMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/RealNumbersOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/RealNumbersOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/VectorAsTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/controler/CheckDataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/CheckDataType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/model/CurrentOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/model/CurrentOperation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

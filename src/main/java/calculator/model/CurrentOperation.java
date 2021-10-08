@@ -14,6 +14,7 @@ public class CurrentOperation {
     private static Set<EMathObjectType> eMathObjectTypes = new HashSet();
     private static Object firstMathObject;
     private static Object secondMathObject;
+    private static Object result;
 
     public static Object getFirstMathObject() {
         return firstMathObject;
@@ -71,5 +72,9 @@ public class CurrentOperation {
         firstObjectEnum = null;
         secondObjectEnum = null;
         mathOperation = null;
+        eMathObjectTypes = null;
+        firstMathObject = null;
+        secondMathObject = null;
+        result = null;
     }
 }

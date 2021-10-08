@@ -1,11 +1,12 @@
 package calculator;
 
-import static calculator.CalculatorTeminate.calculatorTerminateMethod;
+import static calculator.controler.CalculatorTeminate.calculatorTerminateMethod;
 import static calculator.controler.CheckDataType.convertStringToMathematicalObject;
 import static calculator.controler.CheckMathObjectPossibilities.setMathObjectToCurrentOperationClass;
 import static calculator.controler.DataReader.readDataFromConsole;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.checkAndPrintSecondMathematicalObjectPossibility;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.selectPrintAndSetPossibleMathOperation;
+import static calculator.model.CurrentOperation.cleanUpCurrentOperation;
 
 /**
  @author Martin Sembrat
@@ -33,16 +34,12 @@ public class Calculator {
             //check possible type of second object
             checkAndPrintSecondMathematicalObjectPossibility();
 
+            //execute operation based on CurrentOperation class
 
 
+            //clean CurrentOperation state
+            cleanUpCurrentOperation();
 
-
-//            float[][] x = new float[][]{
-//                    {1,2,3,4}
-//            };
-//            VectorAsTable v1 = new VectorAsTable(x);
-//            System.out.println(v1);
-//            System.out.println(v1.content.length);
 
         }while (calculatorTerminateMethod());
     }
