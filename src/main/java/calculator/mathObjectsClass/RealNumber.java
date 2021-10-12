@@ -1,9 +1,9 @@
 package calculator.mathObjectsClass;
 
-public class RealNumber {
+public class RealNumber implements MathObject {
     private float realNumber;
 
-    public float getRealNumber() {
+    public Float getValue() {
         return realNumber;
     }
 

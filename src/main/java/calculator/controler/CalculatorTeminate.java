@@ -17,7 +17,8 @@ public class CalculatorTeminate {
             } else {
                 stop = true;
             }
-        } while (!stop);     return terminateCalculator;
+        } while (!stop);
+        return terminateCalculator;
     }
 }
 

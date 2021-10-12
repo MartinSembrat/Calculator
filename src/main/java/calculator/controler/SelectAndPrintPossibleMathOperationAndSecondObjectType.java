@@ -1,9 +1,6 @@
 package calculator.controler;
 
-import calculator.enums.EMathObjectType;
-
 import java.util.Arrays;
-
 import static calculator.model.CurrentOperation.*;
 import static calculator.controler.DataReader.readDataFromConsole;
 import static calculator.enums.EMathObjectType.*;
@@ -21,7 +18,7 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
         System.out.println("Choose mathematical operation from below:");
         switch (getFirstObjectEnum()) {
             case REALNUMBER:
-                System.out.println(SUM + "\n" + SUBTRACTION + "\n" + MULTIPLICATION + "\n" + DIVISION + "\n" + POW + "\n" + SQR);
+                System.out.println(SUM + "\n" + SUBTRACTION + "\n" + MULTIPLICATION + "\n" + DIVISION + "\n" + POW + "\n" + SQRT);
                 break;
             case VECTOR:
             case MATRIX:
@@ -61,7 +58,7 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
                     break;
                 case "SQR":
                     if (getFirstObjectEnum().equals(REALNUMBER)) {
-                        setMathOperation(SQR);
+                        setMathOperation(SQRT);
                     } else {
                         System.out.println("Incorrect operation");
                         repeat = true;
@@ -76,10 +73,7 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
 
     public static void checkAndPrintSecondMathematicalObjectPossibility() {
         //TODO add SQR execute
-        if (getMathOperation().equals(SQR)) {
-            return;
-        } else if (getFirstObjectEnum().equals(null) || getMathOperation().equals(null)) {
-            System.out.println("First math object or math operation missing");
+        if (getMathOperation().equals(SQRT)) {
             return;
         }
         switch (getMathOperation()) {
@@ -99,10 +93,10 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
             case MULTIPLICATION:
                 if (getFirstObjectEnum().equals(REALNUMBER) || getFirstObjectEnum().equals(MATRIX)) {
                     System.out.println("Enter a real number, vector, matrix");
-                    addMathObjectTypes(Arrays.asList(new EMathObjectType[]{REALNUMBER, VECTOR, MATRIX}));
+                    addMathObjectTypes(Arrays.asList(REALNUMBER, VECTOR, MATRIX));
                 } else if (getFirstObjectEnum().equals(VECTOR)) {
                     System.out.println("Enter a real number or matrix");
-                    addMathObjectTypes(Arrays.asList(new EMathObjectType[]{REALNUMBER, MATRIX}));
+                    addMathObjectTypes(Arrays.asList(REALNUMBER, MATRIX));
                 }
                 break;
             case DIVISION:
@@ -114,6 +108,4 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
                 break;
         }
     }
-
-
 }

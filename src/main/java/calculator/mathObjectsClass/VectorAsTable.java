@@ -1,48 +1,46 @@
 package calculator.mathObjectsClass;
 
-import javax.swing.*;
 import java.util.Arrays;
 
-public class VectorAsTable {
+public class VectorAsTable implements MathObject {
     private int rows;
     private int columns = 1;
-    public float[][] content;
+    private float[][] content;
 
     public VectorAsTable(float[][] content) {
         this.content = content;
         this.rows = content.length;
     }
 
-    public int getRows() {
+    @Override
+    public float[][] getValue() {
+        return content;
+    }
+
+    public int getRowsNumber() {
         return rows;
     }
 
-    public int getColumns() {
+    public int getColumnsNumber() {
         return columns;
     }
 
-    //    public void readVector() {
-//        Scanner s = new Scanner(System.in);
+//    public void printVector() {
 //        for (int i = 0; i < rows; i++) {
 //            for (int j = 0; j < columns; j++) {
-//                content[i][j] = s.nextInt();
+//                System.out.print(content[i][j] + " ");
 //            }
+//            System.out.println();
 //        }
 //    }
-    public void printVector() {
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
-                System.out.print(content[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
 
     @Override
     public String toString() {
         StringBuilder arrayContent = new StringBuilder();
-        for(float[] row:content){
-            if (row!=null){arrayContent.append(Arrays.toString(row)+" ");}
+        for (float[] row : content) {
+            if (row != null) {
+                arrayContent.append(Arrays.toString(row)).append(" ");
+            }
         }
         return "VectorAsTable{" +
                 "rows=" + rows +

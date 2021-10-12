@@ -1,15 +1,16 @@
 package calculator.controler;
 
-        import java.io.BufferedReader;
-        import java.io.IOException;
-        import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class DataReader {
-    static String name;
+
+    static BufferedReader stringReader = new BufferedReader(new InputStreamReader(System.in));
 
     public static String readDataFromConsole() {
-        BufferedReader stringReader = new BufferedReader(new InputStreamReader(System.in));
-        try  {
+        String name = null;
+        try {
             name = stringReader.readLine();
         } catch (IOException e) {
             e.printStackTrace();
