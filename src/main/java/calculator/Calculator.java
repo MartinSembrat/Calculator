@@ -29,7 +29,7 @@ public class Calculator {
             MathObject firstMathObject;
             do {
                 firstMathObject = convertStringToMathematicalObject(readDataFromConsole());
-            } while (setMathObjectToCurrentOperationClass(firstMathObject));
+            } while (!setMathObjectToCurrentOperationClass(firstMathObject));
 
             //check, print and set to CurrentOperation Class possible math operations
             selectPrintAndSetPossibleMathOperation();
@@ -40,8 +40,10 @@ public class Calculator {
             //receiving second math object
             MathObject secondMathObject;
             do {
+                //can be null
                 secondMathObject = convertStringToMathematicalObject(readDataFromConsole());
-            } while (setMathObjectToCurrentOperationClass(secondMathObject));
+                //validation if object is not null and if is in line with requirements
+            } while (!setMathObjectToCurrentOperationClass(secondMathObject));
 
 
             System.out.println(getFirstMathObject());

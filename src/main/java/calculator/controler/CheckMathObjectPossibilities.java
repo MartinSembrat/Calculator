@@ -11,6 +11,8 @@ import static calculator.enums.EMathObjectType.*;
 public class CheckMathObjectPossibilities {
 
     public static boolean setMathObjectToCurrentOperationClass(MathObject object) {
+        if (object == null) {
+            System.out.println("Incorrect data, try again"); return false;}
 
         if (getFirstObjectEnum() == null) {
             if (object instanceof RealNumber) {
@@ -19,7 +21,9 @@ public class CheckMathObjectPossibilities {
                 setFirstObjectEnum(VECTOR);
             } else if (object instanceof Matrix) {
                 setFirstObjectEnum(MATRIX);
-            }  setFirstMathObject(object); return true;
+            }
+            setFirstMathObject(object);
+            return true;
         } else {
             if (object instanceof RealNumber) {
                 setSecondObjectEnum(REALNUMBER);
@@ -27,10 +31,14 @@ public class CheckMathObjectPossibilities {
                 setSecondObjectEnum(VECTOR);
             } else if (object instanceof Matrix) {
                 setSecondObjectEnum(MATRIX);
-            }setSecondMathObject(object); return secondMathObjectValidate();
+            }
+            setSecondMathObject(object);
+            return secondMathObjectValidate();
         }
     }
+
     //check if object is is line with requirements
     static boolean secondMathObjectValidate() {
-        return getMathObjectTypes().contains(getSecondObjectEnum());}
+        return getMathObjectTypes().contains(getSecondObjectEnum());
     }
+}
