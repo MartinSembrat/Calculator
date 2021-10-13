@@ -46,8 +46,8 @@ public class Calculator {
             } while (!setMathObjectToCurrentOperationClass(secondMathObject));
 
 
-            System.out.println(getFirstMathObject());
-            System.out.println(getSecondMathObject());
+            System.out.println("first object "+getFirstMathObject());
+            System.out.println("sec object "+getSecondMathObject());
             //execute operation based on CurrentOperation class
             execute();
             System.out.println(getResult());

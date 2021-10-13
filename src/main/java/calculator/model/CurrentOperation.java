@@ -5,13 +5,13 @@ import calculator.enums.EMathOperationsConstans;
 import calculator.mathObjectsClass.MathObject;
 
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.EnumSet;
 
 public class CurrentOperation {
     private static EMathObjectType firstObjectEnum;
     private static EMathObjectType secondObjectEnum;
     private static EMathOperationsConstans mathOperation;
-    private static HashSet<EMathObjectType> mathObjectTypes = new HashSet<>();
+    private static EnumSet<EMathObjectType> mathObjectTypes = EnumSet.noneOf(EMathObjectType.class);
     private static MathObject firstMathObject;
     private static MathObject secondMathObject;
     private static MathObject result;
@@ -40,7 +40,7 @@ public class CurrentOperation {
         CurrentOperation.mathOperation = mathOperation;
     }
 
-    public static HashSet<EMathObjectType> getMathObjectTypes() {
+    public static EnumSet<EMathObjectType> getMathObjectTypes() {
         return mathObjectTypes;
     }
 
@@ -79,7 +79,7 @@ public class CurrentOperation {
         firstObjectEnum = null;
         secondObjectEnum = null;
         mathOperation = null;
-        mathObjectTypes = null;
+        mathObjectTypes = EnumSet.noneOf(EMathObjectType.class);
         firstMathObject = null;
         secondMathObject = null;
         result = null;

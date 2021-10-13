@@ -11,27 +11,27 @@ public class RealNumbersOperations {
         float result;
         switch (getMathOperation()) {
             case SUM:
-                result =(float)getFirstMathObject().getValue() + (float)getSecondMathObject().getValue();
+                result =((RealNumber)getFirstMathObject()).getValue() + ((RealNumber)getSecondMathObject()).getValue();
                 System.out.println("Suma " + result);
                 break;
             case SUBTRACTION:
-                result=(float)getFirstMathObject().getValue() - (float)getSecondMathObject().getValue();
+                result=((RealNumber)getFirstMathObject()).getValue() - ((RealNumber)getSecondMathObject()).getValue();
                 System.out.println("Różnica " + result);
                 break;
             case MULTIPLICATION:
-                result = (float)getFirstMathObject().getValue() * (float)getSecondMathObject().getValue();
+                result = ((RealNumber)getFirstMathObject()).getValue() * ((RealNumber)getSecondMathObject()).getValue();
                 System.out.println("Iloczyn " + result);
                 break;
             case DIVISION:
-                result = (float)getFirstMathObject().getValue() / (float)getSecondMathObject().getValue();
+                result = ((RealNumber)getFirstMathObject()).getValue() / ((RealNumber)getSecondMathObject()).getValue();
                 System.out.println("Iloraz " + result);
                 break;
             case POW:
-                result = (float) pow(getFirstMathObject().getValue(), getSecondMathObject().getValue());
+                result = (float) pow(((RealNumber)getFirstMathObject()).getValue(), ((RealNumber)getSecondMathObject()).getValue());
                 System.out.println("Potęga " + result);
                 break;
             case SQRT:
-                result=  (float) sqrt(getFirstMathObject().getValue());
+                result=  (float) sqrt(((RealNumber)getFirstMathObject()).getValue());
                 System.out.println("Pierwiastek kwadratowy " +result );
                 break;
             default:

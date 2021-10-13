@@ -6,6 +6,7 @@ import calculator.mathObjectsClass.Matrix;
 import calculator.mathObjectsClass.RealNumber;
 import calculator.mathObjectsClass.VectorAsTable;
 
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,7 +21,7 @@ public class CheckDataType {
     public static final String REAL_NUMBER_PATTERN_STRING = "[+-]?[0-9]+[.]?[0-9]*";
     public static final String VECTOR_PATTERN_STRING = "\\[(?:(" + REAL_NUMBER_PATTERN_STRING + ")[,]?){1,4}]";
     //  public static final String VECTOR_PATTERN_STRING = "\\[("+REAL_NUMBER_PATTERN_STRING+")[,]?("+REAL_NUMBER_PATTERN_STRING+")?[,]?("+REAL_NUMBER_PATTERN_STRING+")?[,]?("+REAL_NUMBER_PATTERN_STRING+")?]";
-    public static final String MATRIX_PATTERN_STRING = "(?:(" + VECTOR_PATTERN_STRING + ")[,]?){1,4}";
+    public static final String MATRIX_PATTERN_STRING = "(?:(" + VECTOR_PATTERN_STRING + ")[,]?){2,4}";
     //  public static final String MATRIX_PATTERN_STRING = "("+VECTOR_PATTERN_STRING+")[,]?("+VECTOR_PATTERN_STRING+")?[,]?("+VECTOR_PATTERN_STRING+")?[,]?("+VECTOR_PATTERN_STRING+")?";
     public static final Pattern REAL_NUMBER_PATTERN = compile(REAL_NUMBER_PATTERN_STRING);
     public static final Pattern VECTOR_PATTERN = compile(VECTOR_PATTERN_STRING);
@@ -46,16 +47,16 @@ public class CheckDataType {
             }
             convertedMathObject = new VectorAsTable(vectorTable);
         } else if (itsMatrix) {
-            String[] tabOfStringsForMatrix = matrixData.group(0).replace("(" + BRACKETS + ")$", "").replace("^(" + BRACKETS + ")", "").split(DOUBLE_BRACKETS);
-            System.out.println("table size: " + tabOfStringsForMatrix.length + " x " + tabOfStringsForMatrix[0].length());
+            String[] tabOfStringsForMatrix = matrixData.group(0).replaceAll("(" + BRACKETS + ")$", "").replaceAll("^(" + BRACKETS + ")", "").split(DOUBLE_BRACKETS);
             float[][] matrixTable = new float[matrixData.groupCount()][];
             //for check if all rows in matrix are equals
             int[] rowsLenght = new int[matrixTable.length];
             for (int i = 0; i < tabOfStringsForMatrix.length; i++) {
                 String[] iElementFromTabOfStringsForMatrix = tabOfStringsForMatrix[i].split(COMMA);
+                matrixTable[i]= new float[iElementFromTabOfStringsForMatrix.length];
                 //for check if all rows in matrix are equals
                 rowsLenght[i] = iElementFromTabOfStringsForMatrix.length;
-                for (int j = 0; j < tabOfStringsForMatrix[i].length(); j++) {
+                for (int j = 0; j < iElementFromTabOfStringsForMatrix.length; j++) {
                     matrixTable[i][j] = Float.parseFloat(iElementFromTabOfStringsForMatrix[j]);
                 }
             }

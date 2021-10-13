@@ -32,17 +32,17 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
         do {
             switch (readDataFromConsole().toUpperCase()) {
                 case "SUM":
-                    setMathOperation(SUM);
+                    setMathOperation(SUM); repeat = false;
                     break;
                 case "SUBTRACTION":
-                    setMathOperation(SUBTRACTION);
+                    setMathOperation(SUBTRACTION);repeat = false;
                     break;
                 case "MULTIPLICATION":
-                    setMathOperation(MULTIPLICATION);
+                    setMathOperation(MULTIPLICATION); repeat = false;
                     break;
                 case "DIVISION":
                     if (getFirstObjectEnum().equals(REALNUMBER)) {
-                        setMathOperation(DIVISION);
+                        setMathOperation(DIVISION); repeat = false;
                     } else {
                         System.out.println("Incorrect operation");
                         repeat = true;
@@ -50,7 +50,7 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
                     break;
                 case "POW":
                     if (getFirstObjectEnum().equals(REALNUMBER)) {
-                        setMathOperation(POW);
+                        setMathOperation(POW); repeat = false;
                     } else {
                         System.out.println("Incorrect operation");
                         repeat = true;
@@ -58,13 +58,14 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
                     break;
                 case "SQR":
                     if (getFirstObjectEnum().equals(REALNUMBER)) {
-                        setMathOperation(SQRT);
+                        setMathOperation(SQRT); repeat = false;
                     } else {
                         System.out.println("Incorrect operation");
                         repeat = true;
                     }
                     break;
                 default:
+                    //TODO w przypadku deflaut nie czyta następnych prób
                     System.out.println("Incorrect data, try again");
                     repeat = true;
             }

@@ -11,7 +11,7 @@ public class VectorOperations {
 
     public static VectorAsTable addVectorAsTable() {
         if (((VectorAsTable)getFirstMathObject()).getRowsNumber() != (((VectorAsTable)getSecondMathObject()).getRowsNumber())) {
-            throw new IllegalArgumentException("first vector plane numbers is not equal to other vector plane");
+            throw new IllegalArgumentException("first vector elements numbers is not equal to other vector elements numbers");
         } else {
             int rows = ((VectorAsTable)getFirstMathObject()).getRowsNumber();
             int columns = ((VectorAsTable)getFirstMathObject()).getColumnsNumber();
@@ -26,7 +26,7 @@ public class VectorOperations {
     }
     public static VectorAsTable subtractVectorAsTable() {
         if (((VectorAsTable)getFirstMathObject()).getRowsNumber() != (((VectorAsTable)getSecondMathObject()).getRowsNumber())) {
-            throw new IllegalArgumentException("first vector plane numbers is not equal to other vector plane");
+            throw new IllegalArgumentException("first vector elements numbers is not equal to other elements plane");
         } else {
             int rows =((VectorAsTable)getFirstMathObject()).getRowsNumber();
             int columns = ((VectorAsTable)getFirstMathObject()).getColumnsNumber();
@@ -41,7 +41,7 @@ public class VectorOperations {
     }
     public static VectorAsTable multiplyMatrixVector() {
         if (((Matrix)getFirstMathObject()).getColumnsNumber() != ((VectorAsTable)getSecondMathObject()).getRowsNumber()) {
-            throw new IllegalArgumentException("number of columns of this matrix is not equal to rows of second matrix, can not multiply");
+            throw new IllegalArgumentException("number of columns of first matrix is not equal to rows of second matrix, can not multiply");
         } else {
             float[][] result = new float[((Matrix)getFirstMathObject()).getRowsNumber()][((VectorAsTable)getSecondMathObject()).getColumnsNumber()];
             float sum = 0;

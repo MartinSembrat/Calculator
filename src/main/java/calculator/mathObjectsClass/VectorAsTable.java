@@ -42,7 +42,7 @@ public class VectorAsTable implements MathObject {
                 arrayContent.append(Arrays.toString(row)).append(" ");
             }
         }
-        return "VectorAsTable{" +
+        return "Vector{" +
                 "rows=" + rows +
                 ", columns=" + columns +
                 ", content=" + arrayContent;

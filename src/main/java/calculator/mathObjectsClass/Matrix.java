@@ -43,7 +43,7 @@ public class Matrix implements MathObject {
                 arrayContent.append(Arrays.toString(row)).append("\n");
             }
         }
-        return "Matrix{" + arrayContent +
+        return "Matrix{\n" + arrayContent +
                 '}';
     }
 }
