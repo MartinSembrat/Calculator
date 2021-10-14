@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081db20b-560f-4aa7-b1eb-59cc5d70f32e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/controler/CalculatorTeminate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/CalculatorTeminate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/controler/CheckDataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/CheckDataType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/mathObjectsClass/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/mathObjectsClass/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/mathObjectsClass/VectorAsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/mathObjectsClass/VectorAsTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/mathOperations/RealNumbersOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/mathOperations/RealNumbersOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/mathOperations/VectorOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/mathOperations/VectorOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/model/CurrentOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/model/CurrentOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/CalculatorTeminate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/CalculatorTeminate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/CheckDataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/CheckDataType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/CheckMathObjectPossibilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/CheckMathObjectPossibilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/mathObjectsClass/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/mathObjectsClass/Matrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/mathObjectsClass/VectorAsTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/mathObjectsClass/VectorAsTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/mathOperations/RealNumbersOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/mathOperations/RealNumbersOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/mathOperations/VectorOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/mathOperations/VectorOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/model/CurrentOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/model/CurrentOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/controler/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/DataReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +50,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m.sembrat.MCCAMBRIDGEGRP\Desktop\IdeaProjects\Calculator" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -122,22 +110,22 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1632898249543" />
-    <state width="1877" height="356" key="GridCell.Tab.0.bottom" timestamp="1634130514391">
+    <state width="1800" height="356" key="GridCell.Tab.0.bottom" timestamp="1634131277349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634130514391" />
-    <state width="1877" height="356" key="GridCell.Tab.0.center" timestamp="1634130514390">
+    <state width="1800" height="356" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634131277349" />
+    <state width="1800" height="356" key="GridCell.Tab.0.center" timestamp="1634131277348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634130514390" />
-    <state width="1877" height="356" key="GridCell.Tab.0.left" timestamp="1634130514390">
+    <state width="1800" height="356" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634131277348" />
+    <state width="1800" height="356" key="GridCell.Tab.0.left" timestamp="1634131277348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634130514390" />
-    <state width="1877" height="356" key="GridCell.Tab.0.right" timestamp="1634130514391">
+    <state width="1800" height="356" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634131277348" />
+    <state width="1800" height="356" key="GridCell.Tab.0.right" timestamp="1634131277349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634130514391" />
+    <state width="1800" height="356" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634131277349" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1634037698167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -171,16 +159,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633355717531" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/calculator/controler/MathOperationExecute.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

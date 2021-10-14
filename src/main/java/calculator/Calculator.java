@@ -1,7 +1,6 @@
 package calculator;
 
 import calculator.mathObjectsClass.MathObject;
-
 import static calculator.controler.MathOperationExecute.execute;
 import static calculator.controler.CalculatorTeminate.calculatorTerminateMethod;
 import static calculator.controler.CheckDataType.convertStringToMathematicalObject;
@@ -18,11 +17,12 @@ public class Calculator {
     public static void main(String[] args) {
 
         do {
-            System.out.print("Uruchomiłeś aplikację kalkulator \n" +
-                    "Wprowadz pierwsze dane wejściowe w jednej z poniższych postaci: \n" +
-                    "*Liczba rzeczywista (dopuszczalna postać ułamkowa rozdzielona przecinkiem \n" +
-                    "*Wektor w postaci [x,y,...] (maksymalnie 4 składowe)\n" +
-                    "*Macierz w postaci [a,b,..],[c,d,...],... (maksymalny rozmiar to 4x4) \n");
+            System.out.print("\n" +
+                    "You have launched the calculator application \n" +
+                    "Enter the first input in one of the following forms: \n" +
+                    "Real number (allowed fractional form separated by a comma) \n" +
+                    "*Vector in the form [x, y, ...] (up to 4 components)\n" +
+                    "*Matrix in the form [a, b, ..], [c, d, ...], ... (the maximum size is 4x4, rows has to be of equal size ) \n");
 
 
             //receiving fist math object

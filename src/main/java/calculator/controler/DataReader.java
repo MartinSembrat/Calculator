@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class DataReader {
 
     static BufferedReader stringReader = new BufferedReader(new InputStreamReader(System.in));
-
+    //TODO prevent creating multiple instances of String
     public static String readDataFromConsole() {
         String name = null;
         try {
