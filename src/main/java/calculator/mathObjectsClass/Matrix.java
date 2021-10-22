@@ -26,15 +26,6 @@ public class Matrix implements MathObject {
         return columnsNumber;
     }
 
-//    public void printMatrix() {
-//        for (int i = 0; i < rowsNumber; i++) {
-//            for (int j = 0; j < columnsNumber; j++) {
-//                System.out.print(content[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
-//    }
-
     @Override
     public String toString() {
         StringBuilder arrayContent = new StringBuilder();
@@ -43,8 +34,7 @@ public class Matrix implements MathObject {
                 arrayContent.append(Arrays.toString(row)).append("\n");
             }
         }
-        return "Matrix{\n" + arrayContent +
-                '}';
+        return "Matrix\n" + arrayContent;
     }
 }
 

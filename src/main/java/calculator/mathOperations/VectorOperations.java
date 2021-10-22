@@ -39,6 +39,8 @@ public class VectorOperations {
             return new VectorAsTable(result);
         }
     }
+
+    //TODO correct logic
     public static VectorAsTable multiplyMatrixVector() {
         if (((Matrix)getFirstMathObject()).getColumnsNumber() != ((VectorAsTable)getSecondMathObject()).getRowsNumber()) {
             throw new IllegalArgumentException("number of columns of first matrix is not equal to rows of second matrix, can not multiply");
@@ -57,8 +59,9 @@ public class VectorOperations {
         }
     }
 
+    //TODO correct logic
     public static VectorAsTable multiplyVectorMatrix() {
-        if (((Matrix)getSecondMathObject()).getColumnsNumber() != ((VectorAsTable)getFirstMathObject()).getRowsNumber()) {
+        if (((Matrix)getSecondMathObject()).getRowsNumber() != ((VectorAsTable)getFirstMathObject()).getColumnsNumber()) {
             throw new IllegalArgumentException("number of columns of this matrix is not equal to rows of second matrix, can not multiply");
         } else {
             float[][] result = new float[((Matrix)getSecondMathObject()).getRowsNumber()][((VectorAsTable)getFirstMathObject()).getColumnsNumber()];

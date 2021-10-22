@@ -48,7 +48,7 @@ public class CheckDataType {
             convertedMathObject = new VectorAsTable(vectorTable);
         } else if (itsMatrix) {
             String[] tabOfStringsForMatrix = matrixData.group(0).replaceAll("(" + BRACKETS + ")$", "").replaceAll("^(" + BRACKETS + ")", "").split(DOUBLE_BRACKETS);
-            float[][] matrixTable = new float[matrixData.groupCount()][];
+            float[][] matrixTable = new float[tabOfStringsForMatrix.length][];
             //for check if all rows in matrix are equals
             int[] rowsLenght = new int[matrixTable.length];
             for (int i = 0; i < tabOfStringsForMatrix.length; i++) {

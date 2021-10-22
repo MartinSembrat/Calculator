@@ -30,6 +30,7 @@ public class MatrixOperations {
         return new Matrix(result);
     }
 
+    //TODO correct logic
     public static Matrix multiplyMatrix() {
         if (((Matrix)getFirstMathObject()).getColumnsNumber() != ((Matrix)getSecondMathObject()).getRowsNumber()) {
             throw new IllegalArgumentException("number of columns of this matrix is not equal to rows of second matrix, cannot multiply");

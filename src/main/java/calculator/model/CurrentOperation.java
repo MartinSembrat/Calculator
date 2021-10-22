@@ -3,7 +3,6 @@ package calculator.model;
 import calculator.enums.EMathObjectType;
 import calculator.enums.EMathOperationsConstans;
 import calculator.mathObjectsClass.MathObject;
-
 import java.util.Collection;
 import java.util.EnumSet;
 

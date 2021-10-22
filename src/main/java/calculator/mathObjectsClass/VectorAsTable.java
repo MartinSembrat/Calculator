@@ -25,26 +25,9 @@ public class VectorAsTable implements MathObject {
         return columns;
     }
 
-//    public void printVector() {
-//        for (int i = 0; i < rows; i++) {
-//            for (int j = 0; j < columns; j++) {
-//                System.out.print(content[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
-//    }
-
     @Override
     public String toString() {
-        StringBuilder arrayContent = new StringBuilder();
-        for (float[] row : content) {
-            if (row != null) {
-                arrayContent.append(Arrays.toString(row)).append(" ");
-            }
-        }
-        return "Vector{" +
-                "rows=" + rows +
-                ", columns=" + columns +
-                ", content=" + arrayContent;
+        String arrayContent = Arrays.deepToString(content);
+        return "Vector " +rows+" "+ arrayContent;
     }
 }

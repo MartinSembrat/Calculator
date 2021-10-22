@@ -13,8 +13,6 @@ public class RealNumber implements MathObject {
 
     @Override
     public String toString() {
-        return "RealNumber{" +
-                "realNumber=" + realNumber +
-                '}';
+        return "RealNumber "+ realNumber;
     }
 }
