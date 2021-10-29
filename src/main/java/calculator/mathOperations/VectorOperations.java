@@ -55,21 +55,21 @@ public class VectorOperations {
         }
     }
 
-    public static VectorAsTable multiplyVectorMatrix() {
+    public static Matrix multiplyVectorMatrix() {
         if (((Matrix)getSecondMathObject()).getRowsNumber() != ((VectorAsTable)getFirstMathObject()).getColumnsNumber()) {
             throw new IllegalArgumentException("number of columns of this matrix is not equal to rows of second matrix, can not multiply");
         } else {
             float[][] result = new float[((VectorAsTable)getFirstMathObject()).getRowsNumber()][((Matrix)getSecondMathObject()).getColumnsNumber()];
-            for (int i = 0; i < ((Matrix)getSecondMathObject()).getRowsNumber(); i++) {
-                for (int j = 0; j < ((VectorAsTable)getFirstMathObject()).getColumnsNumber(); j++) {
+            for (int i = 0; i < ((VectorAsTable)getFirstMathObject()).getRowsNumber(); i++) {
+                for (int j = 0; j < ((Matrix)getSecondMathObject()).getColumnsNumber(); j++) {
                     float sum = 0;
                     for (int k = 0; k < ((VectorAsTable)getFirstMathObject()).getRowsNumber(); k++) {
-                        sum = sum + ((Matrix)getSecondMathObject()).getValue()[i][k] * ((VectorAsTable)getFirstMathObject()).getValue()[k][j];
+                        sum = sum + ((VectorAsTable)getFirstMathObject()).getValue()[k][j]*((Matrix)getSecondMathObject()).getValue()[i][k] ;
                     }
                     result[i][j] = sum;
                 }
             }
-            return new VectorAsTable(result);
+            return new Matrix(result);
         }
     }
 

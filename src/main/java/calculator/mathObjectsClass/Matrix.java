@@ -1,6 +1,7 @@
 package calculator.mathObjectsClass;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Matrix implements MathObject {
     private int rowsNumber;
@@ -35,6 +36,23 @@ public class Matrix implements MathObject {
             }
         }
         return "Matrix\n" + arrayContent;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Matrix matrix = (Matrix) o;
+        return rowsNumber == matrix.rowsNumber &&
+                columnsNumber == matrix.columnsNumber &&
+                Arrays.deepEquals(content, matrix.content);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(rowsNumber, columnsNumber);
+        result = 31 * result + Arrays.hashCode(content);
+        return result;
     }
 }
 
