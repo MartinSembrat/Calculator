@@ -6,7 +6,6 @@ import static calculator.controler.DataReader.readDataFromConsole;
 import static calculator.enums.EMathObjectType.*;
 import static calculator.enums.EMathOperationsConstans.*;
 
-
 public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
 
 
@@ -28,7 +27,7 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
                 System.out.println("first math object is incorrect");
         }
 
-        boolean repeat = false;
+        boolean repeat;
         do {
             switch (readDataFromConsole().toUpperCase()) {
                 case "SUM":
@@ -56,7 +55,7 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
                         repeat = true;
                     }
                     break;
-                case "SQR":
+                case "SQRT":
                     if (getFirstObjectEnum().equals(REALNUMBER)) {
                         setMathOperation(SQRT); repeat = false;
                     } else {
@@ -73,7 +72,6 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
     }
 
     public static void checkAndPrintSecondMathematicalObjectPossibility() {
-        //TODO add SQR execute
         if (getMathOperation().equals(SQRT)) {
             return;
         }

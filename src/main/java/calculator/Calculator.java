@@ -1,5 +1,6 @@
 package calculator;
 
+import calculator.enums.EMathOperationsConstans;
 import calculator.mathObjectsClass.MathObject;
 import static calculator.controler.MathOperationExecute.execute;
 import static calculator.controler.CalculatorTeminate.calculatorTerminateMethod;
@@ -8,6 +9,7 @@ import static calculator.controler.CheckMathObjectPossibilities.setMathObjectToC
 import static calculator.controler.DataReader.readDataFromConsole;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.checkAndPrintSecondMathematicalObjectPossibility;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.selectPrintAndSetPossibleMathOperation;
+import static calculator.enums.EMathOperationsConstans.SQRT;
 import static calculator.model.CurrentOperation.*;
 
 /**
@@ -40,6 +42,7 @@ public class Calculator {
             //receiving second math object
             MathObject secondMathObject;
             do {
+                if (getMathOperation().equals(SQRT)){break;}
                 //can be null
                 secondMathObject = convertStringToMathematicalObject(readDataFromConsole());
                 //validation if object is not null and if is in line with requirements
@@ -50,7 +53,7 @@ public class Calculator {
             System.out.println("sec object "+getSecondMathObject());
             //execute operation based on CurrentOperation class
             execute();
-            System.out.println(getResult());
+            System.out.println("Result: "+getResult());
 
             //clean CurrentOperation state
             cleanUpCurrentOperation();

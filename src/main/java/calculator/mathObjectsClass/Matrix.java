@@ -31,7 +31,7 @@ public class Matrix implements MathObject {
         StringBuilder arrayContent = new StringBuilder();
         for (float[] row : content) {
             if (row != null) {
-                arrayContent.append(Arrays.toString(row)).append("\n");
+                arrayContent.append(Arrays.toString(row));
             }
         }
         return "Matrix\n" + arrayContent;

@@ -30,15 +30,14 @@ public class MatrixOperations {
         return new Matrix(result);
     }
 
-    //TODO correct logic
     public static Matrix multiplyMatrix() {
         if (((Matrix)getFirstMathObject()).getColumnsNumber() != ((Matrix)getSecondMathObject()).getRowsNumber()) {
             throw new IllegalArgumentException("number of columns of this matrix is not equal to rows of second matrix, cannot multiply");
         } else {
             float[][] result = new float[((Matrix)getFirstMathObject()).getRowsNumber()][((Matrix)getSecondMathObject()).getColumnsNumber()];
-            float sum = 0;
             for (int i = 0; i < ((Matrix)getFirstMathObject()).getRowsNumber(); i++) {
                 for (int j = 0; j < ((Matrix)getSecondMathObject()).getColumnsNumber(); j++) {
+                    float sum = 0;
                     for (int k = 0; k < ((Matrix)getSecondMathObject()).getRowsNumber(); k++) {
                         sum = sum + ((Matrix)getFirstMathObject()).getValue()[i][k] * ((Matrix)getSecondMathObject()).getValue()[k][j];
                     }
