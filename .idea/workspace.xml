@@ -2,36 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081db20b-560f-4aa7-b1eb-59cc5d70f32e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/calculator/controler/CheckDataTypeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/calculator/controler/CheckMathObjectPossibilitiesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/calculator/controler/MathOperationExecuteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/calculator/controler/SaveToFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/controler/CheckDataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/CheckDataType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/controler/SaveToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/SaveToFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/enums/EMathOperationsConstans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/enums/EMathOperationsConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/mathOperations/VectorOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/mathOperations/VectorOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/model/CurrentOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/model/CurrentOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/calculator/mathOperations/MatrixOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calculator/mathOperations/MatrixOperationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/calculator/mathOperations/RealNumbersOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calculator/mathOperations/RealNumbersOperationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/calculator/mathOperations/VectorOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calculator/mathOperations/VectorOperationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/CheckDataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/CheckDataType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/MathOperationExecute$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/MathOperationExecute$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/MathOperationExecute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/MathOperationExecute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/calculator/controler/SaveToFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calculator/controler/SaveToFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/SaveToFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/SaveToFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/controler/SelectAndPrintPossibleMathOperationAndSecondObjectType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/enums/EMathOperationsConstans.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/mathOperations/RealNumbersOperations$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/mathOperations/RealNumbersOperations$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/mathOperations/RealNumbersOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/mathOperations/RealNumbersOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/mathOperations/VectorOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/mathOperations/VectorOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/calculator/model/CurrentOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/calculator/model/CurrentOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/calculator/mathOperations/MatrixOperationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/calculator/mathOperations/MatrixOperationsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/calculator/mathOperations/RealNumbersOperationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/calculator/mathOperations/RealNumbersOperationsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/calculator/mathOperations/VectorOperationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/calculator/mathOperations/VectorOperationsTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +68,8 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SaveToFileTest">
-    <configuration name="CheckDataTypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaveToFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calculator.controler.SaveToFile" />
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
@@ -101,9 +77,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="calculator.controler" />
-      <option name="MAIN_CLASS_NAME" value="calculator.controler.CheckDataTypeTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,22 +92,6 @@
       <option name="PACKAGE_NAME" value="calculator.controler" />
       <option name="MAIN_CLASS_NAME" value="calculator.controler.MathOperationExecuteTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathOperationExecuteTest.executeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="calculator.controler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="calculator.controler" />
-      <option name="MAIN_CLASS_NAME" value="calculator.controler.MathOperationExecuteTest" />
-      <option name="METHOD_NAME" value="executeTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,13 +127,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SaveToFileTest.saveToFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.controler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="calculator.controler" />
+      <option name="MAIN_CLASS_NAME" value="calculator.controler.SaveToFileTest" />
+      <option name="METHOD_NAME" value="saveToFileTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SaveToFileTest" />
+        <item itemvalue="Application.SaveToFile" />
+        <item itemvalue="JUnit.SaveToFileTest.saveToFileTest" />
         <item itemvalue="JUnit.MathOperationExecuteTest.mathOperationproviderTest" />
         <item itemvalue="JUnit.MathOperationExecuteTest" />
-        <item itemvalue="JUnit.MathOperationExecuteTest.executeTest" />
-        <item itemvalue="JUnit.CheckDataTypeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -222,25 +195,25 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1632898249543" />
-    <state width="1737" height="264" key="GridCell.Tab.0.bottom" timestamp="1636011714259">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1636032338901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1737" height="264" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636011714259" />
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636032338901" />
     <state width="1737" height="307" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1635944008584" />
-    <state width="1737" height="264" key="GridCell.Tab.0.center" timestamp="1636011714259">
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1636032338901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1737" height="264" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636011714259" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636032338901" />
     <state width="1737" height="307" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1635944008584" />
-    <state width="1737" height="264" key="GridCell.Tab.0.left" timestamp="1636011714258">
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1636032338901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1737" height="264" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636011714258" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636032338901" />
     <state width="1737" height="307" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1635944008584" />
-    <state width="1737" height="264" key="GridCell.Tab.0.right" timestamp="1636011714259">
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1636032338901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1737" height="264" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636011714259" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636032338901" />
     <state width="1737" height="307" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1635944008584" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1635500374330">
       <screen x="0" y="0" width="1920" height="1040" />

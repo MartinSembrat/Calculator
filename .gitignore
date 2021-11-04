@@ -1,6 +1,6 @@
 #Ignore history files
-./history/*
-./idea/*
+.history/*
+.idea/*
 target/
 pom.xml.tag
 pom.xml.releaseBackup
