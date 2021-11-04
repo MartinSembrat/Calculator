@@ -4,7 +4,7 @@ import java.util.Arrays;
 import static calculator.model.CurrentOperation.*;
 import static calculator.controler.DataReader.readDataFromConsole;
 import static calculator.enums.EMathObjectType.*;
-import static calculator.enums.EMathOperationsConstans.*;
+import static calculator.enums.EMathOperationsConstants.*;
 
 public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
 

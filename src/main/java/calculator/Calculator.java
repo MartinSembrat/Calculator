@@ -1,6 +1,5 @@
 package calculator;
 
-import calculator.enums.EMathOperationsConstans;
 import calculator.mathObjectsClass.MathObject;
 import static calculator.controler.MathOperationExecute.execute;
 import static calculator.controler.CalculatorTeminate.calculatorTerminateMethod;
@@ -9,7 +8,7 @@ import static calculator.controler.CheckMathObjectPossibilities.setMathObjectToC
 import static calculator.controler.DataReader.readDataFromConsole;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.checkAndPrintSecondMathematicalObjectPossibility;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.selectPrintAndSetPossibleMathOperation;
-import static calculator.enums.EMathOperationsConstans.SQRT;
+import static calculator.enums.EMathOperationsConstants.SQRT;
 import static calculator.model.CurrentOperation.*;
 
 /**

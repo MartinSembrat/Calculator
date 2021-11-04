@@ -5,28 +5,22 @@ import calculator.mathObjectsClass.MathObject;
 import calculator.mathObjectsClass.Matrix;
 import calculator.mathObjectsClass.RealNumber;
 import calculator.mathObjectsClass.VectorAsTable;
-
-import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import static java.util.regex.Pattern.compile;
 
 //has one static method to convert string to mathematical object
 public class CheckDataType {
 
-    public static final String COMMA = ",";
-    public static final String BRACKETS = "[\\[\\]]";
-    public static final String DOUBLE_BRACKETS = "]\\s?,\\s?\\[";
-    public static final String REAL_NUMBER_PATTERN_STRING = "[+-]?[0-9]+[.]?[0-9]*";
-    public static final String VECTOR_PATTERN_STRING = "\\[(?:(" + REAL_NUMBER_PATTERN_STRING + ")[,]?){1,4}]";
-    //  public static final String VECTOR_PATTERN_STRING = "\\[("+REAL_NUMBER_PATTERN_STRING+")[,]?("+REAL_NUMBER_PATTERN_STRING+")?[,]?("+REAL_NUMBER_PATTERN_STRING+")?[,]?("+REAL_NUMBER_PATTERN_STRING+")?]";
-    public static final String MATRIX_PATTERN_STRING = "(?:(" + VECTOR_PATTERN_STRING + ")[,]?){2,4}";
-    //  public static final String MATRIX_PATTERN_STRING = "("+VECTOR_PATTERN_STRING+")[,]?("+VECTOR_PATTERN_STRING+")?[,]?("+VECTOR_PATTERN_STRING+")?[,]?("+VECTOR_PATTERN_STRING+")?";
-    public static final Pattern REAL_NUMBER_PATTERN = compile(REAL_NUMBER_PATTERN_STRING);
-    public static final Pattern VECTOR_PATTERN = compile(VECTOR_PATTERN_STRING);
-    public static final Pattern MATRIX_PATTERN = compile(MATRIX_PATTERN_STRING);
-
+    private static final String COMMA = ",";
+    private static final String BRACKETS = "[\\[\\]]";
+    private static final String DOUBLE_BRACKETS = "]\\s?,\\s?\\[";
+    private static final String REAL_NUMBER_PATTERN_STRING = "[+-]?[0-9]+[.]?[0-9]*";
+    private static final String VECTOR_PATTERN_STRING = "\\[(?:(" + REAL_NUMBER_PATTERN_STRING + ")[,]?){1,4}]";
+    private static final String MATRIX_PATTERN_STRING = "(?:(" + VECTOR_PATTERN_STRING + ")[,]?){2,4}";
+    private static final Pattern REAL_NUMBER_PATTERN = compile(REAL_NUMBER_PATTERN_STRING);
+    private static final Pattern MATRIX_PATTERN = compile(MATRIX_PATTERN_STRING);
+    private static final Pattern VECTOR_PATTERN = compile(VECTOR_PATTERN_STRING);
 
     public static MathObject convertStringToMathematicalObject(String inputString) {
         Matcher realNumberData = REAL_NUMBER_PATTERN.matcher(inputString);

@@ -3,13 +3,13 @@ package calculator.mathOperations;
 import calculator.mathObjectsClass.RealNumber;
 import org.junit.jupiter.api.Test;
 
-import static calculator.enums.EMathOperationsConstans.*;
+import static calculator.enums.EMathOperationsConstants.*;
 import static calculator.model.CurrentOperation.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RealNumbersOperationsTest {
     @Test
-    void realNumbersOperation() {
+    void realNumbersOperationTest() {
         setFirstMathObject(new RealNumber(99));
         setSecondMathObject(new RealNumber(2));
         setMathOperation(SUM);

@@ -1,7 +1,7 @@
 package calculator.model;
 
 import calculator.enums.EMathObjectType;
-import calculator.enums.EMathOperationsConstans;
+import calculator.enums.EMathOperationsConstants;
 import calculator.mathObjectsClass.MathObject;
 import java.util.Collection;
 import java.util.EnumSet;
@@ -9,7 +9,7 @@ import java.util.EnumSet;
 public class CurrentOperation {
     private static EMathObjectType firstObjectEnum;
     private static EMathObjectType secondObjectEnum;
-    private static EMathOperationsConstans mathOperation;
+    private static EMathOperationsConstants mathOperation;
     private static EnumSet<EMathObjectType> mathObjectTypes = EnumSet.noneOf(EMathObjectType.class);
     private static MathObject firstMathObject;
     private static MathObject secondMathObject;
@@ -31,11 +31,11 @@ public class CurrentOperation {
         CurrentOperation.secondObjectEnum = secondObjectEnum;
     }
 
-    public static EMathOperationsConstans getMathOperation() {
+    public static EMathOperationsConstants getMathOperation() {
         return mathOperation;
     }
 
-    public static void setMathOperation(EMathOperationsConstans mathOperation) {
+    public static void setMathOperation(EMathOperationsConstants mathOperation) {
         CurrentOperation.mathOperation = mathOperation;
     }
 

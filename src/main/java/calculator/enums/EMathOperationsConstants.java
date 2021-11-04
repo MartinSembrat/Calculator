@@ -1,5 +1,5 @@
 package calculator.enums;
 
-public enum EMathOperationsConstans {
+public enum EMathOperationsConstants {
      SUM, SUBTRACTION, MULTIPLICATION, DIVISION, POW, SQRT
     }
