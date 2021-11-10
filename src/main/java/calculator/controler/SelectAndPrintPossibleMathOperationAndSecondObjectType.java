@@ -64,7 +64,7 @@ public class SelectAndPrintPossibleMathOperationAndSecondObjectType {
                     }
                     break;
                 default:
-                    //TODO w przypadku deflaut nie czyta następnych prób
+                    //TODO deflaut stop collect data
                     System.out.println("Incorrect data, try again");
                     repeat = true;
             }
