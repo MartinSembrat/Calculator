@@ -6,8 +6,8 @@ import calculator.mathObjectsClass.VectorAsTable;
 import org.junit.jupiter.api.Test;
 
 import static calculator.mathOperations.VectorOperations.*;
-import static calculator.model.CurrentOperation.setFirstMathObject;
-import static calculator.model.CurrentOperation.setSecondMathObject;
+import static calculator.currentState.CurrentOperation.setFirstMathObject;
+import static calculator.currentState.CurrentOperation.setSecondMathObject;
 import static org.junit.jupiter.api.Assertions.*;
 
 class VectorOperationsTest {

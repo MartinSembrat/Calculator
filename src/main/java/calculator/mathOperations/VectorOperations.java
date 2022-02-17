@@ -2,8 +2,8 @@ package calculator.mathOperations;
 
 import calculator.mathObjectsClass.Matrix;
 import calculator.mathObjectsClass.VectorAsTable;
-import static calculator.model.CurrentOperation.getFirstMathObject;
-import static calculator.model.CurrentOperation.getSecondMathObject;
+import static calculator.currentState.CurrentOperation.getFirstMathObject;
+import static calculator.currentState.CurrentOperation.getSecondMathObject;
 public class VectorOperations {
 
     public static VectorAsTable addVectorAsTable() {

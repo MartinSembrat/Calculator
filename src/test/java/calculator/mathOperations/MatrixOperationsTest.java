@@ -2,12 +2,10 @@ package calculator.mathOperations;
 
 import calculator.mathObjectsClass.Matrix;
 import calculator.mathObjectsClass.RealNumber;
-import calculator.mathObjectsClass.VectorAsTable;
 import org.junit.jupiter.api.*;
 
 import static calculator.mathOperations.MatrixOperations.*;
-import static calculator.mathOperations.VectorOperations.multiplyVectorMatrix;
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MatrixOperationsTest {

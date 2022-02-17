@@ -1,7 +1,7 @@
 package calculator.mathOperations;
 
 import calculator.mathObjectsClass.RealNumber;
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 import static java.lang.StrictMath.pow;
 import static java.lang.StrictMath.sqrt;
 

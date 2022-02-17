@@ -1,4 +1,4 @@
-package calculator.model;
+package calculator.currentState;
 
 import calculator.enums.EMathObjectType;
 import calculator.enums.EMathOperationsConstants;

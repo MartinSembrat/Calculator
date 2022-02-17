@@ -1,5 +1,6 @@
 #Ignore history files
 .history/*
+src/main/java/calculator/history/
 .idea/*
 target/
 pom.xml.tag

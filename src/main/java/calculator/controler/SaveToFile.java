@@ -1,22 +1,20 @@
 package calculator.controler;
-
 import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 
 //TODO use singleton to enable serialization of an instance with a configuration
 public class SaveToFile {
-    static int counter = 1;
-    static int maxOperationNumberPerFile = 2;
-    static int currentOperationNumberInFile = 1;
-    static java.sql.Date date = new java.sql.Date(System.currentTimeMillis());
-    static DateFormat df = new SimpleDateFormat("dd_MM_yyyy_");
-    static String formattedDate = df.format(date);
-    static String path = ".\\src\\main\\java\\calculator\\history\\";
+    protected static int counter = 1;
+    static private int maxOperationNumberPerFile = 2;
+    static private int currentOperationNumberInFile = 1;
+    static private java.sql.Date date = new java.sql.Date(System.currentTimeMillis());
+    static private DateFormat df = new SimpleDateFormat("dd_MM_yyyy_");
+    protected static String formattedDate = df.format(date);
+    protected static String path = ".\\src\\main\\java\\calculator\\history\\";
 
-    static boolean saveToFile() {
+    public static boolean saveToFile() {
         File file;
         file = new File(path + "CalculationHistory" + formattedDate + counter + ".txt");
         if (file.exists() && currentOperationNumberInFile > maxOperationNumberPerFile) {

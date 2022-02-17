@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 
 import static calculator.controler.CheckMathObjectPossibilities.secondMathObjectValidate;
 import static calculator.controler.CheckMathObjectPossibilities.setMathObjectToCurrentOperationClass;
-import static calculator.model.CurrentOperation.*;
+import static calculator.enums.EMathObjectType.MATRIX;
+import static calculator.currentState.CurrentOperation.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CheckMathObjectPossibilitiesTest {
@@ -15,10 +16,10 @@ class CheckMathObjectPossibilitiesTest {
     @Test
     void setMathObjectToCurrentOperationClassTest() {
         assertFalse(setMathObjectToCurrentOperationClass(null));
-        setFirstMathObject(null);
+        setFirstObjectEnum(null);
         assertTrue(setMathObjectToCurrentOperationClass(new Matrix(new float[][]{{5, -1, 1},{2, 5, 5},{0, 33, -8}})));
         assertEquals(getFirstMathObject(), new Matrix(new float[][]{{5, -1, 1},{2, 5, 5},{0, 33, -8}}));
-        addMathObjectTypes(EMathObjectType.MATRIX);
+        addMathObjectTypes(MATRIX);
         assertFalse(setMathObjectToCurrentOperationClass(new VectorAsTable(new float[][]{{0},{0}})));
         assertTrue(setMathObjectToCurrentOperationClass(new Matrix(new float[][]{{0},{0}})));
         assertEquals(getSecondMathObject(), new Matrix(new float[][]{{0},{0}}));
@@ -27,10 +28,10 @@ class CheckMathObjectPossibilitiesTest {
     @Test
     void secondMathObjectValidateTest() {
         getMathObjectTypes().forEach(System.out::println);
-        addMathObjectTypes(EMathObjectType.MATRIX);
+        addMathObjectTypes(MATRIX);
         setSecondObjectEnum(EMathObjectType.VECTOR);
         assertFalse(secondMathObjectValidate());
-        setSecondObjectEnum(EMathObjectType.MATRIX);
+        setSecondObjectEnum(MATRIX);
         assertTrue(secondMathObjectValidate());
     }
 }

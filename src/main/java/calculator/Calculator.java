@@ -6,10 +6,11 @@ import static calculator.controler.CalculatorTeminate.calculatorTerminateMethod;
 import static calculator.controler.CheckDataType.convertStringToMathematicalObject;
 import static calculator.controler.CheckMathObjectPossibilities.setMathObjectToCurrentOperationClass;
 import static calculator.controler.DataReader.readDataFromConsole;
+import static calculator.controler.SaveToFile.saveToFile;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.checkAndPrintSecondMathematicalObjectPossibility;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.selectPrintAndSetPossibleMathOperation;
 import static calculator.enums.EMathOperationsConstants.SQRT;
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 
 /**
  @author Martin Sembrat
@@ -53,6 +54,15 @@ public class Calculator {
             //execute operation based on CurrentOperation class
             execute();
             System.out.println("Result: "+getResult());
+
+            //save to file current operation
+            System.out.println("do you want to save the operation to a file? yes/no");
+            String ifSaveToFile = readDataFromConsole().toLowerCase();
+            if (ifSaveToFile.equals("yes")) {
+                saveToFile();
+                System.out.println("Operation saved");
+            }
+
 
             //clean CurrentOperation state
             cleanUpCurrentOperation();

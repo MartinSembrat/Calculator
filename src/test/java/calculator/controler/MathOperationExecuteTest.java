@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static calculator.controler.MathOperationExecute.mathOperationprovider;
 import static calculator.enums.EMathObjectType.MATRIX;
 import static calculator.enums.EMathOperationsConstants.SUM;
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MathOperationExecuteTest {

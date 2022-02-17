@@ -1,7 +1,7 @@
 package calculator.controler;
 
 import java.util.Arrays;
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 import static calculator.controler.DataReader.readDataFromConsole;
 import static calculator.enums.EMathObjectType.*;
 import static calculator.enums.EMathOperationsConstants.*;

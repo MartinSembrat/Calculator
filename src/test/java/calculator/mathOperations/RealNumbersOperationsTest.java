@@ -4,7 +4,7 @@ import calculator.mathObjectsClass.RealNumber;
 import org.junit.jupiter.api.Test;
 
 import static calculator.enums.EMathOperationsConstants.*;
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RealNumbersOperationsTest {

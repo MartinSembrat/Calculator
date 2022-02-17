@@ -5,7 +5,7 @@ import calculator.mathObjectsClass.Matrix;
 import calculator.mathObjectsClass.RealNumber;
 import calculator.mathObjectsClass.VectorAsTable;
 
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 import static calculator.enums.EMathObjectType.*;
 
 public class CheckMathObjectPossibilities {

@@ -5,7 +5,7 @@ import calculator.mathOperations.MatrixOperations;
 import calculator.mathOperations.RealNumbersOperations;
 import calculator.mathOperations.VectorOperations;
 import static calculator.enums.EMathObjectType.*;
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 
 public class MathOperationExecute {
 

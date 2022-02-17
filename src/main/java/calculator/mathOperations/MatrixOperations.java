@@ -2,7 +2,7 @@ package calculator.mathOperations;
 
 import calculator.mathObjectsClass.Matrix;
 
-import static calculator.model.CurrentOperation.*;
+import static calculator.currentState.CurrentOperation.*;
 
 public class MatrixOperations {
 
