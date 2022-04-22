@@ -6,11 +6,12 @@ import static calculator.controler.CalculatorTeminate.calculatorTerminateMethod;
 import static calculator.controler.CheckDataType.convertStringToMathematicalObject;
 import static calculator.controler.CheckMathObjectPossibilities.setMathObjectToCurrentOperationClass;
 import static calculator.controler.DataReader.readDataFromConsole;
-import static calculator.controler.SaveToFile.saveToFile;
+import static calculator.history_save_controllers.SaveToFile.saveToFile;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.checkAndPrintSecondMathematicalObjectPossibility;
 import static calculator.controler.SelectAndPrintPossibleMathOperationAndSecondObjectType.selectPrintAndSetPossibleMathOperation;
 import static calculator.enums.EMathOperationsConstants.SQRT;
 import static calculator.currentState.CurrentOperation.*;
+import static calculator.history_save_controllers.SaveToH2Databse.saveCurrentStateToH2Database;
 
 /**
  @author Martin Sembrat
@@ -63,9 +64,11 @@ public class Calculator {
                 System.out.println("Operation saved");
             }
 
-
+            //save CurrentOperation state to h2 database
+            saveCurrentStateToH2Database();
             //clean CurrentOperation state
             cleanUpCurrentOperation();
+
 
         }while (calculatorTerminateMethod());
     }

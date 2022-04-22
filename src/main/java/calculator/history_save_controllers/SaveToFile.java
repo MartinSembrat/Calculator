@@ -1,4 +1,4 @@
-package calculator.controler;
+package calculator.history_save_controllers;
 import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -6,13 +6,13 @@ import static calculator.currentState.CurrentOperation.*;
 
 //TODO use singleton to enable serialization of an instance with a configuration
 public class SaveToFile {
-    protected static int counter = 1;
+    public static int counter = 1;
     static private int maxOperationNumberPerFile = 2;
     static private int currentOperationNumberInFile = 1;
     static private java.sql.Date date = new java.sql.Date(System.currentTimeMillis());
     static private DateFormat df = new SimpleDateFormat("dd_MM_yyyy_");
-    protected static String formattedDate = df.format(date);
-    protected static String path = ".\\src\\main\\java\\calculator\\history\\";
+    public static String formattedDate = df.format(date);
+    public static String path = ".\\src\\main\\java\\calculator\\history\\txt_files\\";
 
     public static boolean saveToFile() {
         File file;

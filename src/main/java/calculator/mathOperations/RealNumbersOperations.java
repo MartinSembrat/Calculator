@@ -12,27 +12,27 @@ public class RealNumbersOperations {
         switch (getMathOperation()) {
             case SUM:
                 result =((RealNumber)getFirstMathObject()).getValue() + ((RealNumber)getSecondMathObject()).getValue();
-                System.out.println("Suma " + result);
+                System.out.println("Sum " + result);
                 break;
             case SUBTRACTION:
                 result=((RealNumber)getFirstMathObject()).getValue() - ((RealNumber)getSecondMathObject()).getValue();
-                System.out.println("Różnica " + result);
+                System.out.println("Subtract " + result);
                 break;
             case MULTIPLICATION:
                 result = ((RealNumber)getFirstMathObject()).getValue() * ((RealNumber)getSecondMathObject()).getValue();
-                System.out.println("Iloczyn " + result);
+                System.out.println("Multiply " + result);
                 break;
             case DIVISION:
                 result = ((RealNumber)getFirstMathObject()).getValue() / ((RealNumber)getSecondMathObject()).getValue();
-                System.out.println("Iloraz " + result);
+                System.out.println("Divide " + result);
                 break;
             case POW:
                 result = (float) pow(((RealNumber)getFirstMathObject()).getValue(), ((RealNumber)getSecondMathObject()).getValue());
-                System.out.println("Potęga " + result);
+                System.out.println("Power result " + result);
                 break;
             case SQRT:
                 result=  (float) sqrt(((RealNumber)getFirstMathObject()).getValue());
-                System.out.println("Pierwiastek kwadratowy " +result );
+                System.out.println("Square root " +result );
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + getMathOperation());

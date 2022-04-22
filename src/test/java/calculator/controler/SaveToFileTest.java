@@ -1,14 +1,15 @@
 package calculator.controler;
 
+import calculator.history_save_controllers.SaveToFile;
 import org.junit.jupiter.api.Test;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import static calculator.controler.SaveToFile.formattedDate;
-import static calculator.controler.SaveToFile.counter;
-import static calculator.controler.SaveToFile.saveToFile;
+import static calculator.history_save_controllers.SaveToFile.formattedDate;
+import static calculator.history_save_controllers.SaveToFile.counter;
+import static calculator.history_save_controllers.SaveToFile.saveToFile;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SaveToFileTest {
